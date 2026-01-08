@@ -19,17 +19,16 @@ struct ContentView: View {
                 .tabItem {
                     Label("Swipe", systemImage: "arrow.up")
                 }
-
-            MessagesView()
+           
+            InboxView()
                 .tabItem {
                     Label("Messages", systemImage: "message")
                 }
 
-            // Replaced missing AccountView with a placeholder to avoid 'Cannot find in scope'
-            Text("Account")
-                .tabItem {
-                    Label("Account", systemImage: "person")
-                }
+            AccountView()
+                 .tabItem {
+                     Label("Account", systemImage: "person")
+                 }
         }
         .padding()
     }
