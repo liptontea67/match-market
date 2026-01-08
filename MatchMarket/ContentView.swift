@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "home")
+                    Label("Home", systemImage: "house")
                 }
             SwipeView()
                 .tabItem {
