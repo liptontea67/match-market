@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Listing: Identifiable {
+    let id = UUID()
+    let imageName: String
+    let title: String
+    let location: String
+    let price: String
+}

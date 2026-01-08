@@ -1,8 +1,29 @@
-//
-//  SearchBarView.swift
-//  MatchMarket
-//
-//  Created by Girl Geek on 8/1/2026.
-//
+import SwiftUI
 
-import Foundation
+struct SearchBarView: View {
+    @State private var query: String = ""
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass")
+                .foregroundStyle(.secondary)
+            TextField("Where to?", text: $query)
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
+        }
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .fill(Color(.secondarySystemBackground))
+        )
+        .padding(.horizontal)
+    }
+}
+
+#Preview {
+    VStack(spacing: 16) {
+        SearchBarView()
+    }
+    .padding()
+    .background(Color(.systemGroupedBackground))
+}
