@@ -1,0 +1,15 @@
+{
+  "originHash" : "3e9bebff967d58e41a7ac06fe6ec1a95e46c92f1a449f37095d4b0ce25c51c72",
+  "pins" : [
+    {
+      "identity" : "swipecardskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tobi404/SwipeCardsKit.git",
+      "state" : {
+        "revision" : "169cb840aee51aff01a1bbb0c741c336ec921f80",
+        "version" : "0.2.2"
+      }
+    }
+  ],
+  "version" : 3
+}
