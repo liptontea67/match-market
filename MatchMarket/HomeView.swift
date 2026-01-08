@@ -2,7 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
 
-    let categories = ["Amazing views", "Cabins", "Trending", "Beach", "Design"]
+    let categories = ["Furniture", "Clothing", "Trending", "Milk", "Electronics"]
     let listings = [
         Listing(imageName: "card1", title: "Pot", location: "A Good Pot", price: "$25"),
         Listing(imageName: "card2", title: "Couch", location: "A Good Couch", price: "$300"),
@@ -31,12 +31,12 @@ struct HomeView: View {
 
                     // Listings
                     VStack(spacing: 24) {
-                        ForEach(1..<6) { index in
+                        ForEach(listings, id: \.imageName) { item in
                             ListingCardView(
-                                imageName: "card\(index)",
-                                title: "Modern Apartment",
-                                location: "New York",
-                                price: "$\(120 + index * 20) / night"
+                                imageName: item.imageName,
+                                title: item.title,
+                                location: item.location,
+                                price: item.price
                             )
                         }
                     }

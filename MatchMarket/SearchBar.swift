@@ -11,9 +11,9 @@ struct SearchBar: View {
             Image(systemName: "magnifyingglass")
 
             VStack(alignment: .leading, spacing: 2) {
-                Text("Where to?")
+                Text("What would you like to buy?")
                     .fontWeight(.semibold)
-                Text("Anywhere · Any week · Add guests")
+                Text("Location · Item · Price")
                     .font(.caption)
                     .foregroundColor(.gray)
             }

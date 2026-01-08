@@ -26,7 +26,7 @@ struct CategoryChip: View {
 #Preview {
     ScrollView(.horizontal) {
         HStack(spacing: 12) {
-            ForEach(["Amazing views", "Cabins", "Trending", "Beach", "Design"], id: \.self) { c in
+            ForEach(["Electronics", "Clothings", "Trending", "Furniture", "Housewares"], id: \.self) { c in
                 CategoryChip(title: c)
             }
         }
