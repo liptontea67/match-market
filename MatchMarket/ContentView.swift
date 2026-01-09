@@ -17,7 +17,7 @@ struct ContentView: View {
 
             SwipeView()
                 .tabItem {
-                    Label("Swipe", systemImage: "arrow.up")
+                    Label("For You Page", systemImage: "arrow.up")
                 }
            
             InboxView()

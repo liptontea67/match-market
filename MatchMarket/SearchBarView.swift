@@ -7,7 +7,7 @@ struct SearchBarView: View {
         HStack(spacing: 8) {
             Image(systemName: "magnifyingglass")
                 .foregroundStyle(.secondary)
-            TextField("Where to?", text: $query)
+            TextField("What would you like to buy?", text: $query)
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
         }
